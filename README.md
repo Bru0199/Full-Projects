@@ -17,7 +17,7 @@ The three panels are: Admin, Customer and Driver Panels.
   - Book Trucks
   - Location Update
 
-## Expected outcomes:
+## Outcome :
 Logistics management is successfully implemented with the following features:
 - Admin can add trucks, add and assign drivers, view booking, view rating and view
 updated location.
