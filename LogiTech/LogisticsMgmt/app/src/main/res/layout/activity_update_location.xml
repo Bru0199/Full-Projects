@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="20px"
+    tools:context=".UpdateLocationActivity">
+
+    <ImageView
+        android:id="@+id/driverBackBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+    <TextView
+        android:id="@+id/driverIdTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:textSize="50px"
+        android:textColor="@color/white"
+        android:text="Driver Id : 23423423"/>
+
+
+    <!-- Text Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textSize="50px"
+        android:text="Select Location:"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/currentLoc"
+        android:textSize="50px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/locationList"
+        />
+
+    <Button
+        android:id="@+id/updateLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="100px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/rounded_corner"
+        android:text="Update Location"
+        android:textAllCaps="false"
+        android:textSize="60px" />
+</LinearLayout>

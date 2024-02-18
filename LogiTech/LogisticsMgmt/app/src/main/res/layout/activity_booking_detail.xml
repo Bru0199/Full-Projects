@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="20px"
+    tools:context=".BookingDetailActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:text="Select From:"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:textSize="50px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/locationList"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:text="Select To:"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:textSize="50px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/locationList"
+        />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginTop="100px"
+        android:hint="Enter Weight"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        android:text="Unit"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/unitSpinner"
+        android:textSize="50px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/unit"
+        />
+
+    <Button
+        android:id="@+id/bookBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="60px"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:textAllCaps="false"
+        android:layout_marginTop="100px"
+        android:text="Book"/>
+</LinearLayout>
