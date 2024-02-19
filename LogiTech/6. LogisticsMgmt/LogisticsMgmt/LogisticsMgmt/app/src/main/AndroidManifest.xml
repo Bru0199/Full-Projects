@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.upg.logisticsmgmt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogisticsMgmt">
+        <activity android:name=".RatingListActivity"></activity>
+        <activity android:name=".UserRatingActivity" />
+        <activity android:name=".CreateDriverActivity"
+            android:label="Create Driver"/>
+        <activity android:name=".DriverMgmtActivity" />
+        <activity
+            android:name=".UserTrackActivity"
+            android:label="Track" />
+        <activity
+            android:name=".BookingDetailActivity"
+            android:label="Booking Detail" />
+        <activity
+            android:name=".CustomerProfile"
+            android:label="User Profile" />
+        <activity
+            android:name=".BankDetailActivity"
+            android:label="Bank Details" />
+        <activity
+            android:name=".UserDashboard"
+            android:label="Dashboard" />
+        <activity
+            android:name=".CustomerRegistration"
+            android:label="@string/title_activity_customer_registration"
+            android:theme="@style/Theme.LogisticsMgmt.NoActionBar" />
+        <activity
+            android:name=".UpdateLocationActivity"
+            android:label="Update Location" />
+        <activity
+            android:name=".OrderListActivity"
+            android:label="Orders" />
+        <activity
+            android:name=".DriverDashboard"
+            android:label="Dashboard" />
+        <activity
+            android:name=".DriverLoginActivity"
+            android:label="Driver Login" />
+        <activity
+            android:name=".TrackActivity"
+            android:label="Location Update" />
+        <activity
+            android:name=".AddDriverActivity"
+            android:label="Add Driver" />
+        <activity
+            android:name=".BookingActivity"
+            android:label="Bookings" />
+        <activity
+            android:name=".AddVehicle"
+            android:label="Add Vehicle" />
+        <activity
+            android:name=".VehicleManagment"
+            android:label="Vehicle Management" />
+        <activity
+            android:name=".AdminDashboard"
+            android:label="Admin Dashboard" />
+        <activity
+            android:name=".AdminLogin"
+            android:label="Admin Login" />
+        <activity
+            android:name=".Splash"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
